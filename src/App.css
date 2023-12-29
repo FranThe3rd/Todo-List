@@ -1,38 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+  background-color: rgb(27, 120, 208);
+  color: white;
+}
+  
+
+
+
+
+.new-item-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  max-width: 400px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-row {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Todo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  border: 6px solid rgb(236, 236, 236);
+  border-radius: 40px;
+  max-width: 500px;
+  width: 100%;
+  background-color: rebeccapurple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
