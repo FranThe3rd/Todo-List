@@ -43,7 +43,7 @@ body {
 .wrapper {
   border: 6px solid rgb(236, 236, 236);
   border-radius: 40px;
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   background-color: rebeccapurple;
   position: absolute;
@@ -52,4 +52,42 @@ body {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
+
+
+
+.deleteBttn {
+  margin-left: 5px;
+  background-color: rgb(107, 172, 229);
+  border-radius: 10px;
+  border: none; /* Remove border */
+  font-family: 'Rubik Mono One', sans-serif;
+  color: rgb(253, 253, 253);
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: rgb(107, 172, 229);
+  border-radius: 10px;
+  border: none; /* Remove border */
+  font-family: 'Rubik Mono One', sans-serif;
+  color: rgb(253, 253, 253);
+}
+
+.btn:hover {
+  background-color: rgb(27, 120, 208);
+  color: rgb(253, 253, 253);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+}
+
+.deleteBttn:hover {
+  background-color: rgb(27, 120, 208);
+  color: rgb(253, 253, 253);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 2);
 }

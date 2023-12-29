@@ -63,7 +63,7 @@ function App() {
                 <input checked={todo.completed} onChange={ e => toggleTodo(todo.id,e.target.checked)} type='checkbox' />
                 {todo.title}
               </label>
-              <button onClick={() => deleteTodo(todo.id)} className='btn'>Delete</button>
+              <button className='deleteBttn' onClick={() => deleteTodo(todo.id)} >Delete</button>
             </li>
           );
         })}
